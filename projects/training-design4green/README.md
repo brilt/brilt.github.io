@@ -1,1 +1,0 @@
-# Training-D4G

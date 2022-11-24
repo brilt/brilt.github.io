@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Portfolio Killian Boisseau</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src\css\style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
     />
   </head>
 
@@ -19,7 +25,7 @@
           class="nav-pills nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2"
         >
           <li class="nav-item">
-            <a href="#" class="nav-link" aria-current="page">
+            <a href="#home" class="nav-link link-white">
               <svg class="bi me-2" width="16" height="16">
                 <use xlink:href="#home"></use>
               </svg>
@@ -79,76 +85,93 @@
         class="col-10 offset-2"
         id="main"
       >
-        <h1>Main Area</h1>
+        <!-- HOME -->
+        <div id="home" class="container">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="text h1 text-black"></div>
+          </div>
+
+          <a
+            href="#exp-pro"
+            class="position-absolute bottom-0 start-50 translate-middle"
+            ><i class="bi bi-arrow-down-circle" style="font-size: 2rem"></i
+          ></a>
+        </div>
+
         <!-- Expériences pro -->
         <div class="container" id="exp-pro">
-          <div class="card-group">
-            <!-- ======== exp UAB ======== -->
-            <div class="card mx-5">
-              <img
-                src="img/exp-pro/logo-uab.png"
-                class="card-img-top"
-                alt="Logo coopérative UAB"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Développeur fullstack</h5>
-                <p class="card-text">
-                  Stage durant lequel j'ai refait une page intranet de la
-                  coopération dans le but de corriger une faille de sécurité.
-                  Pour cela j'ai utilisé HTML,CSS, PHP et le protocole FTP.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#uabModal"
-                >
-                  En savoir plus
-                </button>
+          <div class="row row-cols-2">
+            <div class="col">
+              <!-- ======== exp UAB ======== -->
+              <div class="card">
+                <img
+                  src="img/exp-pro/logo-uab.png"
+                  class="card-img-top"
+                  alt="Logo coopérative UAB"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Développeur fullstack</h5>
+                  <p class="card-text">
+                    Stage durant lequel j'ai refait une page intranet de la
+                    coopération dans le but de corriger une faille de sécurité.
+                    Pour cela j'ai utilisé HTML,CSS, PHP et le protocole FTP.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#uabModal"
+                  >
+                    En savoir plus
+                  </button>
+                </div>
               </div>
             </div>
-
-            <!-- ======== exp O'fun ======== -->
-            <div class="card mx-5">
-              <img
-                src="img/exp-pro/logo-ofun.png"
-                class="card-img-top "
-                alt="Logo du parc de loisir O'Fun Park"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Opérateur sauts de l'extrême</h5>
-                <p class="card-text">
-                  Travail saisonnier en tant qu'opérateur sauts de l'extrême.
-                  J'ai animés les différents sauts du parc en m'assurant de la
-                  sécurités des sauteurs. Cette expérience m'a permis d'affiner
-                  ma rigueur et mon aisance à l'oral.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ofunModal"
-                >
-                  En savoirs plus
-                </button>
+            <div class="col">
+              <!-- ======== exp O'fun ======== -->
+              <div class="card">
+                <img
+                  src="img/exp-pro/logo-ofun.png"
+                  class="card-img-top"
+                  alt="Logo du parc de loisir O'Fun Park"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Opérateur sauts de l'extrême</h5>
+                  <p class="card-text">
+                    Travail saisonnier en tant qu'opérateur sauts de l'extrême.
+                    J'ai animés les différents sauts du parc en m'assurant de la
+                    sécurités des sauteurs. Cette expérience m'a permis
+                    d'affiner ma rigueur et mon aisance à l'oral.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ofunModal"
+                  >
+                    En savoirs plus
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="card mx-5">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  Launch demo modal
-                </button>
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Launch demo modal
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -237,7 +260,6 @@
                 >
                   Close
                 </button>
-                
               </div>
             </div>
             <!-- Modal O'FUN -->
@@ -417,7 +439,6 @@
                 >
                   Close
                 </button>
-                
               </div>
             </div>
           </div>
@@ -431,5 +452,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="src\js\script.js"></script>
   </body>
 </html>

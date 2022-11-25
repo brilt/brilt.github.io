@@ -76,4 +76,24 @@ class TextScramble {
     counter = (counter + 1) % phrases.length
   }
   
-  next()
+next()
+  
+
+var buttonUp = (input,button) => {
+  const cards = document.getElementsByClassName("card");
+  const filters = document.getElementsByClassName("filter")
+  for (let j = 0; j < filters.length; j++){
+    filters[j].classList.remove("selectedButton")
+  }
+  for (let i = 0; i < cards.length; i++) {
+      let title = cards[i].querySelector(".card-body");
+      if (input =="All" || title.classList.contains(input)) {
+        cards[i].classList.remove("d-none")
+        button.classList.add('selectedButton')
+      } else {
+        cards[i].classList.add("d-none")
+        
+      }
+  }
+}
+

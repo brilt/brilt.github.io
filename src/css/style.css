@@ -1,9 +1,28 @@
-.dud{
-    color: #e40a0a;
+.dud {
+  color: #e40a0a;
+}
+#home {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https://dataconomy.com/wp-content/uploads/2019/05/artificial-intelligence-artwork-brain-1166602.jpg"); */
+}
+#net {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: white;
 }
-#home{
-    width: 100%;
-    height: 100vh;
-    /* background-image: url("https://dataconomy.com/wp-content/uploads/2019/05/artificial-intelligence-artwork-brain-1166602.jpg"); */
+
+.selectedButton {
+  background-color: #3fe8ff;
 }
+
+.pointer {
+  cursor: pointer;
+}
+

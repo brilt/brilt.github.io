@@ -28,16 +28,14 @@
         >
           <li class="nav-item">
             <a href="#home" class="nav-link" style="color: #3fe8ff">
-              <svg class="bi me-2" width="16" height="16">
-                <use xlink:href="#home"></use>
-              </svg>
+              <i class="bi bi-briefcase-fill"></i>
               Home
             </a>
           </li>
           <li>
             <a href="#exp-pro" class="nav-link" style="color: #3fe8ff">
-              <i class="bi bi-briefcase-fill"></i>
-              Expériences professionnelles
+              <i class="bi bi-house-fill"></i>
+              Expériences
             </a>
           </li>
           <li>
@@ -105,14 +103,12 @@
                   All
                 </li>
                 <li
-                  
                   class="list-group-item filter pointer"
                   onclick="buttonUp('Pro',this);"
                 >
                   Professionnelles
                 </li>
                 <li
-                  
                   class="list-group-item filter pointer"
                   onclick="buttonUp('Ben',this);"
                 >
@@ -146,7 +142,8 @@
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn"
+                    style="background-color: #3fe8ff"
                     data-bs-toggle="modal"
                     data-bs-target="#uabModal"
                   >
@@ -179,11 +176,12 @@
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn"
+                    style="background-color: #3fe8ff"
                     data-bs-toggle="modal"
                     data-bs-target="#ofunModal"
                   >
-                    En savoirs plus
+                    En savoir plus
                   </button>
                 </div>
               </div>
@@ -208,11 +206,12 @@
                   </p>
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn"
+                    style="background-color: #3fe8ff"
                     data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
+                    data-bs-target="#antModal"
                   >
-                    Launch demo modal
+                    En savoir plus
                   </button>
                 </div>
               </div>
@@ -492,6 +491,104 @@
     </div>
 
     <!-- Modal ANT -->
+    <div
+      class="modal fade"
+      id="antModal"
+      tabindex="-1"
+      aria-labelledby="antModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog 	modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="antModalLabel">
+              Membre du club ANT (Accessibilité Numérique pour Tous)
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p>
+                  Dans le cadre de ma scolarité à l’Esaip (lien vers site esaip)
+                  j’ai rejoint le club ANT (Accessibilité Numérique pour Tous)
+                  en 2019. ANT est un club dont le but est d’aider, à hauteur de
+                  nos compétences, toute personne le souhaitant, dans le domaine
+                  du numérique.
+                </p>
+                <p>
+                  La principale est de donner des cours d’informatiques aux
+                  personnes âgées du CCAS de Saint Barthélémy d’Anjou. Nous
+                  dispensons 2 cours d’1h30 par semaine et chaque cours
+                  correspond à un niveau (débutant – avancé). Pendant ces cours,
+                  un ou plusieurs membres du club distribuent des fiches de
+                  cours préparées préalablement et suivent les directions de la
+                  fiche tout en précisant / expliquant les propos.
+                </p>
+                <p>
+                  Nous faisons aussi des ateliers tout public. Ici, toute
+                  personne peut venir nous voir avec une / plusieurs questions /
+                  problèmes lié au numérique et nous faisons tout notre possible
+                  pour y répondre. Il peut s’agir de « comment envoyer une image
+                  par mail », « comment connecter son portable à sa voiture »
+                  par exemple. Nous sommes aussi présents sur internet avec une
+                  adresse-mail d’aide où on peut nous poser des questions. Nous
+                  avons également une chaîne YouTube (lien chaine) où nous
+                  postons des vidéos tutoriel sur l’utilisation de certains
+                  logiciels par exemple. Nous postons aussi les actualités du
+                  club sur notre instagram.
+                </p>
+                <p>
+                  Je suis avant tout un membre du club. J’ai donc donné des
+                  cours d’informatique et animé des ateliers tout public au
+                  CCAS. J’ai aussi réalisé des fiches de cours en LaTeX et Word
+                  et participé à la réalisation de 3 tutoriels YouTube où je
+                  jouais un rôle différent à chaque fois :
+                </p>
+
+                <ul>
+                  <li>
+                    Acteur : la personne que l’on voit sur la vidéo, avec la
+                    caméra activée, qui suis le script et explique le sujet de
+                    la vidéo
+                  </li>
+                  <li>
+                    Scénariste : la personne qui écrit le script de la vidéo :
+                    les points à voir, les actions à faire, …
+                  </li>
+                  <li>
+                    Monteur : la personne qui récupère toutes les prises de
+                    vidéos pour les monter, prendre les éléments intéressants
+                    pour en faire la vidéo finale
+                  </li>
+                </ul>
+                <p>
+                  Je fais partie du bureau du club avec la fonction de
+                  secrétaire. En étant membre du bureau, je participe aux prises
+                  de décision du club. Je suis chargé de prendre en note toutes
+                  les décisions / informations importantes mentionnées pendant
+                  la réunion et de faire un compte rendu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>

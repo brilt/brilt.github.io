@@ -1,5 +1,5 @@
 .dud {
-  color: #e40a0a;
+  color: #3fe8ff;
 }
 #home {
   width: 100%;
@@ -16,6 +16,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: white;
+  color: #3fe8ff;
 }
 
 .selectedButton {
@@ -26,3 +27,10 @@
   cursor: pointer;
 }
 
+.background-theme{
+  background-color: #3fe8ff;
+}
+
+.text-theme{
+  color: #3fe8ff;
+}

@@ -26,12 +26,43 @@
         id="sticky-sidebar"
         style="background-color: #040b14"
       >
+      <div class="row p-3"></div>
         <div class="row">
-          <img
-            src="assets/img/face.jpg"
-            alt="Admin"
-            class="rounded-circle p-5"
+          <div class="col"></div>
+          
+          
+          <div class="col text-center">
+            <p class="h2 text-white">Killian Boisseau</p>
+            <img
+            src="assets/img/pdp_face.png"
+            alt="Photo de Killian Boisseau"
+            class="rounded-circle mb-1"
+            width="150"
           />
+            <a
+              href="assets/CV_Killian-Boisseau.pdf"
+              role="button"
+              target="_blank"
+              class="bi bi-file-earmark-person-fill text-theme h2 border-0"
+              style="background-color: #040b14"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/killian-boisseau/"
+              role="button"
+              target="_blank"
+              class="bi bi-linkedin text-theme h2 border-0"
+              style="background-color: #040b14"
+            ></a>
+            <a
+              href="https://github.com/brilt"
+              role="button"
+              target="_blank"
+              class="bi bi-github text-theme h2 border-0"
+              style="background-color: #040b14"
+            ></a>
+            
+          </div>
+          <div class="col"></div>
         </div>
 
         <ul
@@ -139,7 +170,7 @@
                           Saint-Barthélemy-d'Anjou
                         </p>
                         <a
-                          href="CV_Killian-Boisseau.pdf"
+                          href="assets/CV_Killian-Boisseau.pdf"
                           role="button"
                           target="_blank"
                           class="btn background-theme"
@@ -205,13 +236,26 @@
                     <hr />
                     <div class="row">
                       <div class="col-sm-3">
-                        <h6 class="mb-0">
-                          <i class="bi bi-github"></i>Github
-                        </h6>
+                        <h6 class="mb-0"><i class="bi bi-github"></i> Github</h6>
                       </div>
                       <div class="col-sm-9 text-secondary">
                         <a href="https://github.com/brilt" target="_blank"
                           >brilt</a
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                      <div class="col-sm-3">
+                        
+                        <h6 class="mb-0"> <i class="bi bi-linkedin"></i> LinkedIn </h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        
+                        <a
+                          href="https://www.linkedin.com/in/killian-boisseau/"
+                          target="_blank"
+                          >killian-boisseau</a
                         >
                       </div>
                     </div>
@@ -401,14 +445,14 @@
                     <!-- Name input-->
                     <div class="form-group">
                       <label class="col-md-3 control-label" for="name"
-                        >Name</label
+                        >Nom</label
                       >
                       <div class="col-md-9">
                         <input
                           id="name"
                           name="name"
                           type="text"
-                          placeholder="Your name"
+                          placeholder="Hatsune Miku"
                           class="form-control"
                         />
                       </div>
@@ -417,14 +461,14 @@
                     <!-- Email input-->
                     <div class="form-group">
                       <label class="col-md-3 control-label" for="email"
-                        >Your E-mail</label
+                        >Votre E-mail</label
                       >
                       <div class="col-md-9">
                         <input
                           id="email"
                           name="email"
                           type="text"
-                          placeholder="Your email"
+                          placeholder="example@email.com"
                           class="form-control"
                         />
                       </div>
@@ -433,14 +477,14 @@
                     <!-- Message body -->
                     <div class="form-group">
                       <label class="col-md-3 control-label" for="message"
-                        >Your message</label
+                        >Votre message</label
                       >
                       <div class="col-md-9">
                         <textarea
                           class="form-control"
                           id="message"
                           name="message"
-                          placeholder="Please enter your message here..."
+                          placeholder="Ecrivez votre message"
                           rows="5"
                         ></textarea>
                       </div>
@@ -449,8 +493,11 @@
                     <!-- Form actions -->
                     <div class="form-group">
                       <div class="col-md-12 text-right">
-                        <button type="button" class="btn background-theme btn-lg">
-                          Submit
+                        <button
+                          type="button"
+                          class="btn background-theme btn-lg"
+                        >
+                          Envoyer
                         </button>
                       </div>
                     </div>
